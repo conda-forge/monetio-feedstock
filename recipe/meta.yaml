@@ -27,6 +27,7 @@ requirements:
     - dask
     - s3fs
     - pyresample
+    - joblib
 
 test:
   imports:
