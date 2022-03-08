@@ -38,7 +38,7 @@ test:
     - monetio.sat
 
 about:
-  home: https://monetio-arl.readthedocs.io
+  home: https://monetio.readthedocs.io
   license: MIT
   license_family: MIT
   license_file: LICENSE
