@@ -20,14 +20,16 @@ requirements:
     - pip
   run:
     - python >=3.6
+    #
+    - dask
+    - joblib
+    - netcdf4
     - numpy
     - pandas
+    - pyresample
+    - s3fs
     - scipy
     - xarray
-    - dask
-    - s3fs
-    - pyresample
-    - joblib
 
 test:
   imports:
