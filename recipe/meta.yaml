@@ -1,5 +1,5 @@
 {% set name = "monetio" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/noaa-oar-arl/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: c16f343c1cda8dbe12966e353907d9706c14a686212fa7908579891a6c1c6e62
+  sha256: 2a53b22af1eb079eff7cbbc6c591b30a288af77210f28e0fbb4a446b13812068
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -50,4 +50,4 @@ about:
 extra:
   recipe-maintainers:
     - zmoon
-    - bbakernoaa 
+    - bbakernoaa
