@@ -22,11 +22,14 @@ requirements:
     - python >=3.6
     #
     - dask
+    - h5netcdf
     - joblib
+    - lxml
     - netcdf4
     - numpy
     - pandas
     - pyresample
+    - requests
     - s3fs
     - scipy
     - xarray
