@@ -1,5 +1,5 @@
 {% set name = "monetio" %}
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/noaa-oar-arl/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 2a53b22af1eb079eff7cbbc6c591b30a288af77210f28e0fbb4a446b13812068
+  sha256: 285c692df4ccd50d9fd8001e492fa3c3aacc014e1e200efddc1b52d2b0f0681c
 
 build:
   noarch: python
