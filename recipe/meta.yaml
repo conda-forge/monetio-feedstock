@@ -11,16 +11,16 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     #
     - dask
     - h5netcdf
@@ -37,6 +37,8 @@ requirements:
     - xarray
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - monetio
     - monetio.models
