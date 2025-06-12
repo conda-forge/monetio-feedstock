@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/noaa-oar-arl/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f12da343ec15aafdb7925df68a240ebb97036a29770233c1757c431ea2a826a5
+  sha256: e20aa78920756cbce6def7c8d4129367d7122ad2586c59393a3e9e7e131756a5
 
 build:
   noarch: python
