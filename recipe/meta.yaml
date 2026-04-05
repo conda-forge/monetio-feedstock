@@ -22,7 +22,10 @@ requirements:
   run:
     - python >={{ python_min }}
     #
+    - cftime
     - dask
+    - filelock
+    - fsspec
     - h5netcdf
     - h5py
     - joblib
