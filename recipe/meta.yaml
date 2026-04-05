@@ -1,5 +1,5 @@
 {% set name = "monetio" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/noaa-oar-arl/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: e20aa78920756cbce6def7c8d4129367d7122ad2586c59393a3e9e7e131756a5
+  sha256: 84336780a9c00e3b6449ed235e1a34a9ad752c3b147306fe92c53211a681794e
 
 build:
   noarch: python
@@ -22,7 +22,10 @@ requirements:
   run:
     - python >={{ python_min }}
     #
+    - cftime
     - dask
+    - filelock
+    - fsspec
     - h5netcdf
     - h5py
     - joblib
